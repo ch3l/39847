@@ -7,7 +7,4 @@ public partial class CascadingTypeparamComponent<TItem>
 {
 	[Parameter]
 	public RenderFragment ChildContent { get; set; }
-
-	[Parameter]
-	public EventCallback<TItem> EventCallback { get; set; }
 }
