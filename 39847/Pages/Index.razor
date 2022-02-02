@@ -1,0 +1,15 @@
+﻿@page "/"
+
+@*Cascading typeparam*@
+<CascadingTypeparamComponent TItem=int>
+	<IssuedComponent EventCallback="() => {}">
+		Blabla
+	</IssuedComponent>
+</CascadingTypeparamComponent>
+
+@*Explicit typeparam*@
+<CascadingTypeparamComponent TItem=int>
+	<IssuedComponent TItem=int EventCallback="() => {}">
+		Blabla
+	</IssuedComponent>
+</CascadingTypeparamComponent>
